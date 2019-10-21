@@ -15,7 +15,7 @@ export class AuthenticationService {
 
   loginUser(user:User):any{
     console.log(user);
-    let url = "http://localhost:9090/api/v1/authenticate";
+    let url = "http://localhost:8080/login-service/api/v1/authenticate";
     return this.http.post(url,user,httpOptions);
     // let url = "http://localhost:9090/api/v1/authenticate";
     // return this.http.post(url, user, httpOptions);

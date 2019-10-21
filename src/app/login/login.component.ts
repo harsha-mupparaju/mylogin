@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       console.log(data);
       this.route.navigateByUrl('/user-dashboard');
     },error=>{
-      this.route.navigateByUrl('');
+      this.route.navigateByUrl('/register');
 
     });
   }
